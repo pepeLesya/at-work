@@ -72,7 +72,7 @@ export default function UserCard({ user, onEdit, onArchive, onHide,isArchived = 
               onArchive();
             }}
           >
-            Архивировать
+             {isArchived ? 'Разархивировать' : 'Архивировать'}
           </button>
           <button
             className={styles.dropdownItem}

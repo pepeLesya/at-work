@@ -197,6 +197,8 @@
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 20px;
+  padding-bottom: 8px; 
+  border-bottom: 1px solid #DADADA;
   color: #161616;
   margin: 24px 0 16px 0;
 
@@ -213,7 +215,7 @@
   margin-bottom: 32px;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     gap: 12px;
     margin-bottom: 24px;
   }

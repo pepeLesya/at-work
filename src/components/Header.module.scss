@@ -32,36 +32,48 @@
     }
   }
 }
-.logoButton {
-    background: none;
-    border: none; 
-    padding: 0; 
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none; 
 
-    img {
-      width: 24px;
-      height: 24px;
+.logoButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* ← добавлен gap между иконкой и текстом */
+  text-decoration: none;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logoText {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #161616;
+    line-height: 1;
+
+    .at {
+      font-weight: 500;
     }
 
-    span {
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 18px;
-      color: #161616;
+    .work {
+      font-weight: 700;
+    }
+  }
 
-      @media (max-width: 768px) {
-        font-size: 16px;
-      }
-    }}
+  @media (max-width: 768px) {
+    .logoText {
+      font-size: 16px;
+    }
+  }
+}
 
 .controls {
   display: flex;
   align-items: center;
-  gap: 8px;
 
   .iconButton {
     background: none;
@@ -72,13 +84,15 @@
     align-items: center;
     justify-content: center;
 
+    &:not(:last-child) {
+      margin-right: 6px; 
+    }
+
     span {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 24px; 
-      color: #2d2c2c;
-      opacity: 0.7;
+
       img {
         width: 24px;
         height: 24px;
@@ -97,6 +111,7 @@
     align-items: center;
     gap: 8px;
     cursor: pointer;
+    margin-left: 12px;
 
     img {
       width: 24px;
